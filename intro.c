@@ -93,3 +93,140 @@ comment
 // long double  -> 10 bytes
 // wchar_t      -> 2 bytes (wide character)
 // void         -> no value (used as return type of functions)
+
+
+
+// formate Specifiers
+
+
+// %d -> int
+// %f -> float
+// %lf -> double
+// %c -> char
+// %s -> string
+
+// variable should be declared
+// After declation of variable we can inisilised (assign value).
+// one variable declared only one time -> redeclaration of variable not allowed
+
+// #include<stdio.h>
+// int main(){
+
+//     // variable declaration
+
+//     // datatype varible_name
+
+//     int num;
+
+//     num = 10;
+
+//     printf("The value of num is : %d",num);
+
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     // variable declaration
+
+//     // datatype varible_name
+
+//     int num;
+
+//     num = 10;
+
+//     printf("The value of num is : %d\n",num);
+
+//     // reinisilisation is allowed
+
+//     num = 100;
+//     printf("The value of num(reinisilisation) is : %d",num);
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+//     // variable declaration
+
+//     // datatype varible_name
+
+//     // we can declared and inisilisation of any variable in same line
+
+//     int num = 10;
+
+//     printf("The value of num is : %d\n",num);
+
+//     // reinisilisation is allowed
+
+//     num = 100;
+//     printf("The value of num(reinisilisation) is : %d",num);
+
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     float price = 1000.5025;
+
+//     printf("Price value is : %f",price);
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+//     float price = 1000.5025;
+
+//     // printf("Price value is : %0.2f",price);
+//     printf("Price value is : %0.3f",price);
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+//     double price = 1000.5025f;
+
+//     // printf("Price value is : %0.2f",price);
+//     printf("Price value is : %0.3lf",price);
+
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     char ch = 'a';
+
+//     printf("character value is : %c",ch);
+
+// }
+
+
+// #include<stdio.h>
+// int main(){
+
+//     char *ch = "Pawan Maurya";
+
+//     printf("character value is : %s",ch);
+
+// }
+
+
+#include<stdio.h>
+int main(){
+
+    char ch[] = "Pawan Maurya";
+
+    printf("character value is : %s",ch);
+
+}
