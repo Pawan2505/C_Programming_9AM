@@ -222,11 +222,127 @@ comment
 // }
 
 
+// #include<stdio.h>
+// int main(){
+
+//     char ch[] = "Pawan Maurya";
+
+//     printf("character value is : %s",ch);
+
+// }
+
+// Method 1:
+
+// constant -> value which is not change
+// it insilisation at the time of declaration at same line
+// use of const keyword
+// Syntax : const datatype varible_name = value;
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 10;
+
+//     num = 40;
+
+//     printf("The value of num is : %d\n",num);
+
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//    const int num = 10;
+
+//     // num = 40; // compiler error
+
+//     printf("The value of num is : %d\n",num);
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//    const int num;
+
+//     // num = 40; // not ok
+
+//     printf("The value of num is : %d\n",num);
+
+// }
+
+
+
+// Method 2:
+
+//  Micro  -> #define
+//  Syntax : #define CONSTANT_NAME value
+//  CONSTANT_NAME -> all letters should be in uppercase
+//  value -> constant value
+//  no ; at the end of line
+//  no memory allocation for constant -> 
+//  preprocessor replace all constant name with value before compilation
+//  it is case sensitive : num and NUM are different
+//  it is global in nature -> can be used anywhere in program after declaration
+//  it can be used for only value not for variable
+
+
+// #include<stdio.h>
+// #define PI 3.14  // global variable
+
+// int main(){
+   
+//     const int num = 100;
+
+//     // PI = 46.45; // Not ok
+//     // num = 200; // not ok
+
+//     printf("The value of num is : %d\n",num);
+//     printf("PI : %0.2f\n",PI); // 3.14
+//     printf("PI : %d\n",sizeof(PI)); // 3.14
+
+// }
+
+
+// #include<stdio.h>
+// #define PI 3  // global variable
+
+// int main(){
+
+//     int value;
+   
+//     const int num = 100;
+
+//     // PI = 46.45; // Not ok
+//     // num = 200; // not ok
+
+//     printf("The value of num is : %d\n",num);
+//     printf("PI : %d\n",PI); // 3.14
+//     printf("PI : %d\n",sizeof(PI)); // 3.14
+
+// }
+
+
 #include<stdio.h>
+#define PI "Pawan"  // global variable
+
 int main(){
 
-    char ch[] = "Pawan Maurya";
+    int value;
+   
+    const int num = 100;
 
-    printf("character value is : %s",ch);
+    // PI = 46.45; // Not ok
+    // num = 200; // not ok
+
+    printf("The value of num is : %d\n",num);
+    printf("PI : %s\n",PI); // 3.14
+    printf("PI : %d\n",sizeof(PI)); // 3.14
+    printf("The size of value : %d",sizeof(value));
 
 }
