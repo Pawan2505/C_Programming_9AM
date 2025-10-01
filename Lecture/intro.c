@@ -328,21 +328,320 @@ comment
 // }
 
 
+// #include<stdio.h>
+// #define PI "Pawan"  // global variable
+
+// int main(){
+
+//     int value;
+   
+//     const int num = 100;
+
+//     // PI = 46.45; // Not ok
+//     // num = 200; // not ok
+
+//     printf("The value of num is : %d\n",num);
+//     printf("PI : %s\n",PI); // 3.14
+//     printf("PI : %d\n",sizeof(PI)); // 3.14
+//     printf("The size of value : %d",sizeof(value));
+
+// }
+
+
+// scanf() -> It is used to take input from user
+// Syntax : scanf("format specifier",&variable_name);
+// & -> address of operator -> it gives the address of variable
+// we have to use & before variable name in scanf
+// we can take multiple input from user in single scanf
+// we have to use space between format specifier in case of multiple input
+// we have to use , between variable name in case of multiple input
+// order of format specifier and variable name should be same
+// we can use scanf only for variable not for constant
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num; // declaration of variable
+
+
+//     printf("Enter value of Num : ");
+//     // printf("\nMemory of num  : %d",&num);
+
+//     scanf("%d",&num);
+
+//     printf("The value num is : %d",num);
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num; 
+//     printf("Enter value of Num : ");
+//     scanf("%d",&num); // user input
+//     printf("The value num is : %d",num); // 100
+
+// }
+
+
+// operator :
+
+
+// uniary ops : ++ ,--
+
+// a++ => post increment -> phle use hoga baad me increase hoga.
+// ++a => pre increment -> phle increase hoga baad me use hoga.
+
+// a-- => post decrement -> phle use hoga hoga baad me decrement hoga.
+// --a => pre decrement -> phle decrement hoga baad me use hoga.
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int a = 10;
+
+//     printf("The value of a : %d\n",a);
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int a = 10;
+
+//     printf("The value of a : %d\n",a); // 10
+//     a++; //10
+//     printf("The value of a : %d\n",a); // 11
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 15;
+
+//     printf("The value of x : %d\n",x++); // 15
+//     printf("The value of x : %d\n",x++); //16
+//     printf("The value of x : %d\n",x); // 17
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 15;
+
+//     printf("The value of x : %d\n",x++); // 15
+//     printf("The value of x : %d\n",++x); // 17
+//     printf("The value of x : %d\n",++x); // 18
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 15;
+
+//     printf("The value of x : %d\n",x--); // 15
+//     printf("The value of x : %d\n",--x); // 13
+//     printf("The value of x : %d\n",--x); // 12
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 15;
+//     printf("The value of x : %d\n",x-- + x++); // 31, 15, 30, 
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//    int x = 10;
+//    int y = 5;
+
+//    printf("Sum : %d\n",x+y); //15
+//    printf("Sub : %d\n",x-y); // 5
+//    printf("div : %d\n",x/y); // 2
+//    printf("Rem : %d\n",x%y); // 0
+//    printf("Mul : %d\n",x*y); // 50
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//    int x = 10;
+//    int y = 5;
+
+//    printf("Rem : %d\n",y%x); // 5
+
+
+// }
+
+
+
+
+// Releational ops: > , < , >=, <=, ==, !=
+// bool -> 
+// true -> 1
+// false -> 0
+
+// #include<stdio.h>
+
+// int main(){
+
+//     float h1 = 65.5;
+//     float h2 = 55;
+
+//     printf("h1 > h2 : %d\n",(h1>h2)); // 1
+//     printf("h1 < h2 : %d\n",(h1<h2)); // 0
+//     printf("h1 <= h2 : %d\n",(h1<=h2)); // 0
+//     printf("h1 == h2 : %d\n",(h1==h2)); // 0
+//     printf("h1 != h2 : %d\n",(h1!=h2)); // 1
+//     printf("h1 != h2 : %d\n",(h1!=h2)); // 1
+// }
+
+// Logical ops : && (Logical AND) ,|| (Logical OR) , Logical Not (!)
+
+
+//  && (Logical AND) 
+
+// a   &&  b    R
+// ---------------
+// 1       1    1
+// 0       1    0
+// 1       0    0
+// 0       0    0
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     float h1 = 65.5;
+//     float h2 = 55;
+
+//     printf("((h1>h2) && (h1>=h2)) : %d\n",((h1>h2) && (h1>=h2))); // 1
+//     printf("((h1<h2) && (h1>h2)): %d\n",((h1<h2) && (h1>h2))); // 0
+//     printf("((h1<=h2) && (h1!=h2)) : %d\n",((h1<=h2) && (h1!=h2))); // 0
+//     printf("((h1==h2) && (h1<=h2)): %d\n",((h1==h2) && (h1<=h2))); // 0
+//     printf("((h1!=h2) && (h1>h2)): %d\n",((h1!=h2) && (h1>h2))); // 1
+
+// }
+
+
+// (condn1) || (condn2)   R
+//   1            1       1
+//   0            1       1
+//   1            0       1
+//   0            0       0
+
+// #include<stdio.h>
+
+// int main(){
+
+//     float h1 = 65.5;
+//     float h2 = 55;
+
+//     printf("((h1>h2) || (h1>=h2)) : %d\n",((h1>h2) || (h1>=h2))); // 1
+//     printf("((h1<h2) || (h1>h2)): %d\n",((h1<h2) || (h1>h2))); // 1
+//     printf("((h1<=h2) || (h1!=h2)) : %d\n",((h1<=h2) || (h1!=h2))); // 1
+//     printf("((h1==h2) || (h1<=h2)): %d\n",((h1==h2) || (h1<=h2))); // 0
+//     printf("((h1!=h2) || (h1>h2)): %d\n",((h1!=h2) || (h1>h2))); // 1
+
+// }
+
+
+// Logical NOT (!) 
+
+// !true -> false
+// !false -> true
+
+// #include<stdio.h>
+
+// int main(){
+
+//     float h1 = 65.5;
+//     float h2 = 55;
+
+//     printf("!((h1>h2) || (h1>=h2)) : %d\n",!((h1>h2) || (h1>=h2))); // 0
+//     printf("!((h1<h2) || (h1>h2)): %d\n",!((h1<h2) || (h1>h2))); // 0
+//     printf("!((h1<=h2) || (h1!=h2)) : %d\n",!((h1<=h2) || (h1!=h2))); // 0
+//     printf("!((h1==h2) || (h1<=h2)): %d\n",!((h1==h2) || (h1<=h2))); // 1
+//     printf("!((h1!=h2) || (h1>h2)): %d\n",!((h1!=h2) || (h1>h2))); // 0
+
+// }
+
+
+// Assignment ops: =, *=, +=,-=,/=,%=
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 10;
+
+//     // x = x+50;
+
+//     x += 50;
+
+//     printf("%d\n",x); // 60
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x = 10;
+
+//     x = x%3;
+
+//     // x += 50;
+
+//     printf("%d\n",x); // 1
+
+// }
+
+
+// Ternary ops : (condition) ? statement1 : statement2 ;
+
+
 #include<stdio.h>
-#define PI "Pawan"  // global variable
 
 int main(){
 
-    int value;
-   
-    const int num = 100;
+int age;
 
-    // PI = 46.45; // Not ok
-    // num = 200; // not ok
+printf("Your Age : ");
 
-    printf("The value of num is : %d\n",num);
-    printf("PI : %s\n",PI); // 3.14
-    printf("PI : %d\n",sizeof(PI)); // 3.14
-    printf("The size of value : %d",sizeof(value));
+scanf("%d",&age);
+
+(age>=18)?printf("You are eligible to vote!"):printf("Sorry, you are not eligible to vote!");
+
 
 }
