@@ -631,17 +631,487 @@ comment
 // Ternary ops : (condition) ? statement1 : statement2 ;
 
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
+// int main(){
 
-int age;
+// int age;
 
-printf("Your Age : ");
+// printf("Your Age : ");
 
-scanf("%d",&age);
+// scanf("%d",&age);
 
-(age>=18)?printf("You are eligible to vote!"):printf("Sorry, you are not eligible to vote!");
+// (age>=18)?printf("You are eligible to vote!"):printf("Sorry, you are not eligible to vote!");
+
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num1;
+//     printf("Num1 = : ");
+//     scanf("%d",&num1);
+
+//     int num2;
+//     printf("Num2 = : ");
+//     scanf("%d",&num2);
+
+//     int num3;
+//     printf("Num3 = : ");
+//     scanf("%d",&num3);
+
+//     (num1>num2 && num1>num3)?printf("num1 is greater!"):(num2>num1 && num2>num3)?printf("num2 is greater!"):printf("num3 is greater!");
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+//     int y = 5;
+
+//     int result = x&y;
+
+//     printf("%d & %d : %d",x,y, result);
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//   int a = 10;
+//   int b = 5;
+
+//   printf("AND : %d\n",a&b);
+//   printf("OR : %d\n",a|b);
+//   printf("XOR : %d\n",a^b);
+//   printf("NOT : %d\n",~a);
+//   printf("left shift : %d\n",a<<2);
+//   printf("right shift : %d\n",a>>2);
+
+// }
+
+// Conditional statement
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age;
+
+//     printf("Enter Age : ");
+
+//     scanf("%d",&age);
+
+//     if(age>=18){
+//         printf("You are eligible to vote!");
+//     }
+//     if(age<18){
+//         printf("Sorry, You watch cartoon!");
+//     }
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age;
+
+//     printf("Enter Age : ");
+
+//     scanf("%d",&age);
+
+//     if(age>=18){
+//         printf("You are eligible to vote!");
+//     }else{
+//         printf("Invalid input!");
+//     }
+// }
+
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int number;
+
+//     printf("Enter Number : ");
+
+//     scanf("%d",&number);
+
+//     if(number<0){
+//         printf("Negative Number");
+//     }else{
+//         printf("Positive Number");
+//     }
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int number;
+
+//     printf("Enter Number : ");
+
+//     scanf("%d",&number);
+
+//     if(number%2 == 0){
+//         printf("Even Number");
+//     }else{
+//         printf("Odd Number");
+//     }
+// }
+
+
+//  else if()
+
+// #include<stdio.h>
+
+// int main(){
+//     float marks;
+
+//     printf("Enter your marks : ");
+//     scanf("%f",&marks);
+
+//     if(marks<=100 && marks>=90){
+//         printf("Grade A");
+//     }
+//     else if(marks<90 && marks>=80){
+//         printf("Grade B");
+//     }
+//     else if(marks<80 &&marks>=70){
+//         printf("Grade C");
+//     }else{
+//         printf("Sorry, You are faield!");
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int age;
+
+//     printf("Enter Age : ");
+//     scanf("%d",&age);
+
+//     if(age>=18){
+//         //block of code
+//         if(age>=50){
+//             printf("Watch Ramayan!");
+//         }else{
+//            printf("Watch what you want!");
+//         }
+//     }else{
+//         //block of code
+//         printf("Watch cartoon!");
+//     }
+// }
+
+
+// Prime number : 1, itself se divide ho -> use number ko prime number bolte hai
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num;
+//     printf("Enter Number : ");
+//     scanf("%d",&num);
+//     int count = 0;
+
+//     for(int i = 1; i<=num; i++){
+//         if(num%i == 0){
+//             count++;
+//         }
+//     }
+//     if(count == 2){
+//         printf("%d is prime number",num);
+//     }else{
+//          printf("%d is not prime number",num);
+//     }
+// }
+
+
+
+// Switch Case 
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int first_num; 
+//     printf("Enter First Number : ");
+//     scanf("%d",&first_num);
+
+//     char  ch;
+//     printf("Enter operator : ");
+//     scanf(" %c",&ch);
+    
+//     int second_num; 
+//     printf("Enter Second Number : ");
+//     scanf("%d",&second_num);
+
+
+//     switch(ch){
+        
+//         case '+':
+//             printf("Add : %d",first_num+second_num);
+//             break;
+//         case '-':
+//             printf("Sub : %d",first_num-second_num);
+//             break;
+//         case '/':
+//             printf("div : %d",first_num/second_num);
+//             break;
+//         case '*':
+//             printf("mul : %d",first_num*second_num);
+//             break;
+//         case '%':
+//             printf("rem : %d",first_num%second_num);
+//             break;
+//         default:
+//             printf("Invalid Input!");
+//     }
+// }
+
+
+
+// Loop : used for repeted task
+
+// Type of loop
+
+// Entery control loop -> phle condition check hoga baad agr condition shi hota hai to entry krega block k andar
+
+// 1. For Loop -> 1(starting) to 100(ending) -> range
+// 2. While Loop -> condition
+
+// Exist control loop
+
+// 3. Do While Loop -> same as while loop -> only diffrence hai -> exist control loop -> atlist one time do while loop run krta hai.
+
+
+
+// For Loop
+
+// #include<stdio.h>
+
+// int main(){
+
+//     // Syntax of for loop
+
+//     // for(statement1; statement2; statement3){
+
+//     // }
+
+//     //  statement1 -> starting point set krta hai-> int i = 1;
+//     // statement2 -> condition check krna -> i <=100;
+//     // statement3 -> inc / dec -> i++,++i, i--,--i
+
+
+//     for(int i = 1; i<=100; i++){
+//         printf("%d\n",i);
+//     }
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     for(int i = 100; i>=1; i--){
+//         printf("%d\n",i);
+//     }
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+// int i = 100;
+//     for(; i>=1; i--){
+//         printf("%d\n",i);
+//     }
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//     int i = 100;
+//     for(; i>=1; ){
+//         printf("%d\n",i);
+//         i--;
+//     }
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     for(int i = 1; i<=10; i++){
+//         printf("%d\n",2*i);
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     for(int i = 2; i<=20; i+=2){
+//         printf("%d\n",i);
+//     }
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+// // syntax : 
+
+//     // while ((condition))
+//     // {
+//     //     /* code */
+//     // }
+//     int num = 1;
+
+//     while(num<=10){
+//         printf("%d\n",num);
+//         ++num;
+//     }
+    
+
+// }
+
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 10;
+
+//     while(num>=1){
+//         printf("%d\n",num);
+//         --num;
+//     }
+    
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 10;
+
+//     int sum = 0;
+
+//     while(num>=1){
+//        sum = sum +num; // 10+9
+//         --num;
+//     }
+    
+//     printf("sum of 1 to 10 is : %d",sum);
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 10;
+
+//     int sum = 0;
+
+//     while(num>=1){
+      
+//         if(num%2 == 0){
+//              sum = sum +num; 
+//         }
+//         --num;
+//     }
+    
+//     printf("sum even number b/w 1 to 10 is : %d",sum);
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+    
+//     int option;
+
+//     do{
+//         int num;
+//         printf("Enter number : ");
+//         scanf("%d",&num);
+//         if(num%2==0){
+//             printf("Even number!\n");
+//         }else{
+//             printf("Odd number\n");
+//         }
+//         printf("Are you want to test next number ? if yes then enter 1 otherwise you enter 0 for exist :");
+//         scanf("%d",&option);
+//     }while(option != 0);
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int num = 0;
+    
+//     do{
+//         num++;
+//         if(num==5){
+//             continue;
+//         }
+//         printf("%d\n",num);
+      
+//     }while(num<10);
+// }
+
+
+
+#include <stdio.h>
+
+int main() {
+   
+
+    for( int i = 0; i<=10; i++){
+        printf("%d\n",i);
+
+        if(i==9){
+            goto abc;
+        }
+    }
+    abc:
+    printf("Exit\n");
+    goto sdf;
+    sdf:
+         printf("Aur bhai");
 
 
 }
