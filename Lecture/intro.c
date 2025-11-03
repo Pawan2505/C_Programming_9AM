@@ -1095,23 +1095,88 @@ comment
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
+// int main() {
    
 
-    for( int i = 0; i<=10; i++){
-        printf("%d\n",i);
+//     for( int i = 0; i<=10; i++){
+//         printf("%d\n",i);
 
-        if(i==9){
-            goto abc;
-        }
-    }
-    abc:
-    printf("Exit\n");
-    goto sdf;
-    sdf:
-         printf("Aur bhai");
+//         if(i==9){
+//             goto abc;
+//         }
+//     }
+//     abc:
+//     printf("Exit\n");
+//     goto sdf;
+//     sdf:
+//          printf("Aur bhai");
 
 
-}
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     // row
+
+//     for(int row = 1; row<=4; row++){
+
+//     // col
+
+//     for(int col = 1; col<=row; col++){
+//         printf("%d ",col);
+//     }
+
+//     printf("\n");
+
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     // row
+
+//     for(int row = 1; row<=4; row++){
+
+
+//     // space
+//     for(int space = 1; space<=4-row; space++){
+//         printf(" ");
+//     }
+
+//     // number
+
+//     for(int col = 1; col<=row; col++){
+//         printf("%d",col);
+//     }
+
+//     printf("\n");
+
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     // row
+
+//     for(int row = 1; row<=5; row++){
+
+//         // col
+
+//         for(int col = 1; col<=5; col++){
+//             printf("%d ",col);
+//         }
+
+//         printf("\n");
+//     }
+// }
+
+
