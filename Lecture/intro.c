@@ -1,4 +1,4 @@
-// # -> Preprocessor  
+// # -> Preprocessor
 // include -> directive to include a file
 // stdio.h -> Standard Input Output Header file (contains printf, scanf etc.)
 
@@ -13,7 +13,6 @@ comment
 
 // {} -> block of code -> function body
 // () -> parenthesis -> parameter list (arguments) -> input to function
-
 
 // First program with printf
 // #include <stdio.h>   // Header file for input/output
@@ -94,10 +93,7 @@ comment
 // wchar_t      -> 2 bytes (wide character)
 // void         -> no value (used as return type of functions)
 
-
-
 // formate Specifiers
-
 
 // %d -> int
 // %f -> float
@@ -124,8 +120,6 @@ comment
 
 // }
 
-
-
 // #include<stdio.h>
 // int main(){
 
@@ -145,7 +139,6 @@ comment
 //     printf("The value of num(reinisilisation) is : %d",num);
 
 // }
-
 
 // #include<stdio.h>
 // int main(){
@@ -167,8 +160,6 @@ comment
 
 // }
 
-
-
 // #include<stdio.h>
 // int main(){
 
@@ -177,7 +168,6 @@ comment
 //     printf("Price value is : %f",price);
 
 // }
-
 
 // #include<stdio.h>
 // int main(){
@@ -189,7 +179,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 // int main(){
 
@@ -200,8 +189,6 @@ comment
 
 // }
 
-
-
 // #include<stdio.h>
 // int main(){
 
@@ -211,7 +198,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 // int main(){
 
@@ -220,7 +206,6 @@ comment
 //     printf("character value is : %s",ch);
 
 // }
-
 
 // #include<stdio.h>
 // int main(){
@@ -237,7 +222,6 @@ comment
 // it insilisation at the time of declaration at same line
 // use of const keyword
 // Syntax : const datatype varible_name = value;
-
 
 // #include<stdio.h>
 
@@ -263,7 +247,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -276,8 +259,6 @@ comment
 
 // }
 
-
-
 // Method 2:
 
 //  Micro  -> #define
@@ -285,18 +266,17 @@ comment
 //  CONSTANT_NAME -> all letters should be in uppercase
 //  value -> constant value
 //  no ; at the end of line
-//  no memory allocation for constant -> 
+//  no memory allocation for constant ->
 //  preprocessor replace all constant name with value before compilation
 //  it is case sensitive : num and NUM are different
 //  it is global in nature -> can be used anywhere in program after declaration
 //  it can be used for only value not for variable
 
-
 // #include<stdio.h>
 // #define PI 3.14  // global variable
 
 // int main(){
-   
+
 //     const int num = 100;
 
 //     // PI = 46.45; // Not ok
@@ -308,14 +288,13 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 // #define PI 3  // global variable
 
 // int main(){
 
 //     int value;
-   
+
 //     const int num = 100;
 
 //     // PI = 46.45; // Not ok
@@ -327,14 +306,13 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 // #define PI "Pawan"  // global variable
 
 // int main(){
 
 //     int value;
-   
+
 //     const int num = 100;
 
 //     // PI = 46.45; // Not ok
@@ -346,7 +324,6 @@ comment
 //     printf("The size of value : %d",sizeof(value));
 
 // }
-
 
 // scanf() -> It is used to take input from user
 // Syntax : scanf("format specifier",&variable_name);
@@ -364,7 +341,6 @@ comment
 
 //     int num; // declaration of variable
 
-
 //     printf("Enter value of Num : ");
 //     // printf("\nMemory of num  : %d",&num);
 
@@ -374,21 +350,18 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
 
-//     int num; 
+//     int num;
 //     printf("Enter value of Num : ");
 //     scanf("%d",&num); // user input
 //     printf("The value num is : %d",num); // 100
 
 // }
 
-
 // operator :
-
 
 // uniary ops : ++ ,--
 
@@ -408,7 +381,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -420,7 +392,6 @@ comment
 //     printf("The value of a : %d\n",a); // 11
 
 // }
-
 
 // #include<stdio.h>
 
@@ -434,7 +405,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -446,7 +416,6 @@ comment
 //     printf("The value of x : %d\n",++x); // 18
 
 // }
-
 
 // #include<stdio.h>
 
@@ -460,16 +429,14 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
 
 //     int x = 15;
-//     printf("The value of x : %d\n",x-- + x++); // 31, 15, 30, 
+//     printf("The value of x : %d\n",x-- + x++); // 31, 15, 30,
 
 // }
-
 
 // #include<stdio.h>
 
@@ -486,7 +453,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -496,14 +462,10 @@ comment
 
 //    printf("Rem : %d\n",y%x); // 5
 
-
 // }
 
-
-
-
 // Releational ops: > , < , >=, <=, ==, !=
-// bool -> 
+// bool ->
 // true -> 1
 // false -> 0
 
@@ -524,8 +486,7 @@ comment
 
 // Logical ops : && (Logical AND) ,|| (Logical OR) , Logical Not (!)
 
-
-//  && (Logical AND) 
+//  && (Logical AND)
 
 // a   &&  b    R
 // ---------------
@@ -533,8 +494,6 @@ comment
 // 0       1    0
 // 1       0    0
 // 0       0    0
-
-
 
 // #include<stdio.h>
 
@@ -550,7 +509,6 @@ comment
 //     printf("((h1!=h2) && (h1>h2)): %d\n",((h1!=h2) && (h1>h2))); // 1
 
 // }
-
 
 // (condn1) || (condn2)   R
 //   1            1       1
@@ -573,8 +531,7 @@ comment
 
 // }
 
-
-// Logical NOT (!) 
+// Logical NOT (!)
 
 // !true -> false
 // !false -> true
@@ -594,7 +551,6 @@ comment
 
 // }
 
-
 // Assignment ops: =, *=, +=,-=,/=,%=
 
 // #include<stdio.h>
@@ -611,8 +567,6 @@ comment
 
 // }
 
-
-
 // #include<stdio.h>
 
 // int main(){
@@ -627,9 +581,7 @@ comment
 
 // }
 
-
 // Ternary ops : (condition) ? statement1 : statement2 ;
-
 
 // #include<stdio.h>
 
@@ -643,9 +595,7 @@ comment
 
 // (age>=18)?printf("You are eligible to vote!"):printf("Sorry, you are not eligible to vote!");
 
-
 // }
-
 
 // #include<stdio.h>
 
@@ -666,8 +616,6 @@ comment
 //     (num1>num2 && num1>num3)?printf("num1 is greater!"):(num2>num1 && num2>num3)?printf("num2 is greater!"):printf("num3 is greater!");
 // }
 
-
-
 // #include<stdio.h>
 
 // int main(){
@@ -678,8 +626,6 @@ comment
 
 //     printf("%d & %d : %d",x,y, result);
 // }
-
-
 
 // #include<stdio.h>
 
@@ -717,7 +663,6 @@ comment
 
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -734,9 +679,6 @@ comment
 //         printf("Invalid input!");
 //     }
 // }
-
-
-
 
 // #include<stdio.h>
 
@@ -772,7 +714,6 @@ comment
 //     }
 // }
 
-
 //  else if()
 
 // #include<stdio.h>
@@ -796,7 +737,6 @@ comment
 //     }
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -819,9 +759,7 @@ comment
 //     }
 // }
 
-
 // Prime number : 1, itself se divide ho -> use number ko prime number bolte hai
-
 
 // #include<stdio.h>
 
@@ -844,29 +782,26 @@ comment
 //     }
 // }
 
-
-
-// Switch Case 
+// Switch Case
 
 // #include<stdio.h>
 
 // int main(){
 
-//     int first_num; 
+//     int first_num;
 //     printf("Enter First Number : ");
 //     scanf("%d",&first_num);
 
 //     char  ch;
 //     printf("Enter operator : ");
 //     scanf(" %c",&ch);
-    
-//     int second_num; 
+
+//     int second_num;
 //     printf("Enter Second Number : ");
 //     scanf("%d",&second_num);
 
-
 //     switch(ch){
-        
+
 //         case '+':
 //             printf("Add : %d",first_num+second_num);
 //             break;
@@ -887,8 +822,6 @@ comment
 //     }
 // }
 
-
-
 // Loop : used for repeted task
 
 // Type of loop
@@ -901,8 +834,6 @@ comment
 // Exist control loop
 
 // 3. Do While Loop -> same as while loop -> only diffrence hai -> exist control loop -> atlist one time do while loop run krta hai.
-
-
 
 // For Loop
 
@@ -920,13 +851,10 @@ comment
 //     // statement2 -> condition check krna -> i <=100;
 //     // statement3 -> inc / dec -> i++,++i, i--,--i
 
-
 //     for(int i = 1; i<=100; i++){
 //         printf("%d\n",i);
 //     }
 // }
-
-
 
 // #include<stdio.h>
 
@@ -936,8 +864,6 @@ comment
 //         printf("%d\n",i);
 //     }
 // }
-
-
 
 // #include<stdio.h>
 
@@ -958,8 +884,6 @@ comment
 //     }
 // }
 
-
-
 // #include<stdio.h>
 
 // int main(){
@@ -968,7 +892,6 @@ comment
 //         printf("%d\n",2*i);
 //     }
 // }
-
 
 // #include<stdio.h>
 
@@ -979,12 +902,10 @@ comment
 //     }
 // }
 
-
-
 // #include<stdio.h>
 
 // int main(){
-// // syntax : 
+// // syntax :
 
 //     // while ((condition))
 //     // {
@@ -996,12 +917,8 @@ comment
 //         printf("%d\n",num);
 //         ++num;
 //     }
-    
 
 // }
-
-
-
 
 // #include<stdio.h>
 
@@ -1013,10 +930,8 @@ comment
 //         printf("%d\n",num);
 //         --num;
 //     }
-    
+
 // }
-
-
 
 // #include<stdio.h>
 
@@ -1030,7 +945,7 @@ comment
 //        sum = sum +num; // 10+9
 //         --num;
 //     }
-    
+
 //     printf("sum of 1 to 10 is : %d",sum);
 // }
 
@@ -1043,22 +958,20 @@ comment
 //     int sum = 0;
 
 //     while(num>=1){
-      
+
 //         if(num%2 == 0){
-//              sum = sum +num; 
+//              sum = sum +num;
 //         }
 //         --num;
 //     }
-    
+
 //     printf("sum even number b/w 1 to 10 is : %d",sum);
 // }
-
-
 
 // #include<stdio.h>
 
 // int main(){
-    
+
 //     int option;
 
 //     do{
@@ -1075,30 +988,25 @@ comment
 //     }while(option != 0);
 // }
 
-
-
 // #include<stdio.h>
 
 // int main(){
 
 //     int num = 0;
-    
+
 //     do{
 //         num++;
 //         if(num==5){
 //             continue;
 //         }
 //         printf("%d\n",num);
-      
+
 //     }while(num<10);
 // }
-
-
 
 // #include <stdio.h>
 
 // int main() {
-   
 
 //     for( int i = 0; i<=10; i++){
 //         printf("%d\n",i);
@@ -1113,9 +1021,7 @@ comment
 //     sdf:
 //          printf("Aur bhai");
 
-
 // }
-
 
 // #include<stdio.h>
 
@@ -1135,14 +1041,12 @@ comment
 //     }
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
 //     // row
 
 //     for(int row = 1; row<=4; row++){
-
 
 //     // space
 //     for(int space = 1; space<=4-row; space++){
@@ -1159,7 +1063,6 @@ comment
 
 //     }
 // }
-
 
 // #include<stdio.h>
 
@@ -1179,4 +1082,37 @@ comment
 //     }
 // }
 
+// #include<stdio.h>
 
+// int main(){
+
+//     for(int i = 65; i <= 90; i++){
+//         printf("%c ",i);
+//     }
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char ch = 'A';
+
+//     printf("%d",ch);
+// }
+
+#include <stdio.h>
+
+int main()
+{
+
+    for (int row = 1; row <= 4; row++)
+    {
+
+        for (int col = 1; col <= row; col++)
+        {
+            printf("%c ", 64 + col);
+        }
+
+        printf("\n");
+    }
+}
