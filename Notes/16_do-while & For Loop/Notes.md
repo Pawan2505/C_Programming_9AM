@@ -23,7 +23,7 @@ That’s why it always runs at least once.
 
 ---
 
-### 🧩 **Q.1 — Print 1 to 10 using do-while loop**
+### **Q.1 — Print 1 to 10 using do-while loop**
 
 ```c
 #include <stdio.h>
