@@ -1100,19 +1100,104 @@ comment
 //     printf("%d",ch);
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
+// int main()
+// {
 
-    for (int row = 1; row <= 4; row++)
-    {
+//     for (int row = 1; row <= 4; row++)
+//     {
 
-        for (int col = 1; col <= row; col++)
-        {
-            printf("%c ", 64 + col);
-        }
+//         for (int col = 1; col <= row; col++)
+//         {
+//             printf("%c ", 64 + col);
+//         }
 
-        printf("\n");
-    }
-}
+//         printf("\n");
+//     }
+// }
+
+
+// Array
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5];
+
+//     arr[0] = 10;
+//     arr[1] = 20;
+//     arr[2] = 30;
+//     arr[3] = 40;
+//     arr[4] = 50;
+
+//     printf("arr[0] : %d\n",arr[0]);
+//     printf("arr[1] : %d\n",arr[1]);
+//     printf("arr[2] : %d\n",arr[2]);
+//     printf("arr[3] : %d\n",arr[3]);
+//     printf("arr[4] : %d\n",arr[4]);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5];
+
+//     arr[0] = 10;
+//     arr[1] = 20;
+//     arr[2] = 30;
+//     arr[3] = 40;
+//     arr[4] = 50;
+//     // arr[5] = 60; // not correct logicly
+
+//     printf("arr[0] : %d\n",arr[0]);
+//     printf("arr[1] : %d\n",arr[1]);
+//     printf("arr[2] : %d\n",arr[2]);
+//     printf("arr[3] : %d\n",arr[3]);
+//     printf("arr[4] : %d\n",arr[4]);
+//     // printf("arr[5] : %d\n",arr[5]); // not correct logicly
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5];
+
+//     for(int i = 0; i<5; i++){
+//         printf("Enter value at %d index : ",i);
+//         scanf("%d",&arr[i]);
+//     }
+
+//     printf("Array : ");
+//     for(int i = 0; i<5; i++){
+//        printf("%d ",arr[i]);
+//     }
+    
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5]; // we can not isert more data in array from size
+
+//     for(int i = 0; i<7; i++){  // not ok
+//         printf("Enter value at %d index : ",i);
+//         scanf("%d",&arr[i]);
+//     }
+
+//     printf("Array : ");
+//     for(int i = 0; i<7; i++){  // not ok
+//        printf("%d ",arr[i]);
+//     }
+    
+// }
+
+
+
