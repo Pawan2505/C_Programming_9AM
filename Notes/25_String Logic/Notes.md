@@ -54,7 +54,7 @@ int main(){
 
 ---
 
-### 🧩 **Explanation**
+### **Explanation**
 
 1. The user enters a string.
 2. We find its length manually (without using `strlen`).
