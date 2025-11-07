@@ -1201,3 +1201,113 @@ comment
 
 
 
+// int arr[10] = {12,34,56,78,90,36,45,22,66,45};
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[10] = {12,34,56,78,90,36,45,22,66,45};
+
+//     int key = 45;
+
+//     for(int i = 0; i<10; i++){
+
+//         if(arr[i] == key){
+//             printf("%d ",i);
+//         }
+//     }
+
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[10] = {12,34,56,78,90,36,45,22,66,45};
+
+//     int key = 45;
+
+//     for(int i = 0; i<10; i++){
+
+//         if(arr[i] == key){
+//             printf("%d ",i);
+//             break;
+//         }
+//     }
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[] = {12,34,56,78,90,36,45,22,66,45};
+
+//     int key = 45;
+
+//     printf("Size of array : ");
+
+//     int size = sizeof(arr)/sizeof(arr[0]);
+
+//     printf("arr size : %d\n",size);
+
+//     for(int i = 0; i<size; i++){
+
+//         if(arr[i] == key){
+//             printf("%d ",i);
+//             break;
+//         }
+//     }
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[] = {12,34,56,78,90,36,45,22,66,45};
+
+//     int key = 45;
+
+//     printf("Size of array : ");
+
+//     int size = sizeof(arr)/sizeof(arr[0]);
+
+//     printf("arr size : %d\n",size);
+
+//     for(int i = 0; i<size; i++){
+//         printf("%d ",arr[i]);
+//     }
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[] = {12,34,56,78,90,36,45,22,66,45};
+
+//     int key = 45;
+
+//     printf("Size of array : ");
+
+//     int size = sizeof(arr)/sizeof(arr[0]);
+
+//     printf("arr size : %d\n",size);
+//     float sum = 0;
+//     for(int i = 0; i<size; i++){
+//         sum = sum + arr[i];
+//     }
+
+//     printf(" avg : %f ",sum/size);
+
+// }
+
+// int/int = int
+
+// foat/int = float
+
+// foat/float = float
