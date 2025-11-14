@@ -1117,7 +1117,6 @@ comment
 //     }
 // }
 
-
 // Array
 
 // #include<stdio.h>
@@ -1138,7 +1137,6 @@ comment
 //     printf("arr[3] : %d\n",arr[3]);
 //     printf("arr[4] : %d\n",arr[4]);
 // }
-
 
 // #include<stdio.h>
 
@@ -1161,7 +1159,6 @@ comment
 //     // printf("arr[5] : %d\n",arr[5]); // not correct logicly
 // }
 
-
 // #include<stdio.h>
 
 // int main(){
@@ -1177,9 +1174,8 @@ comment
 //     for(int i = 0; i<5; i++){
 //        printf("%d ",arr[i]);
 //     }
-    
-// }
 
+// }
 
 // #include<stdio.h>
 
@@ -1196,14 +1192,10 @@ comment
 //     for(int i = 0; i<7; i++){  // not ok
 //        printf("%d ",arr[i]);
 //     }
-    
+
 // }
 
-
-
 // int arr[10] = {12,34,56,78,90,36,45,22,66,45};
-
-
 
 // #include<stdio.h>
 
@@ -1237,7 +1229,6 @@ comment
 //     }
 
 // }
-
 
 // #include<stdio.h>
 
@@ -1261,8 +1252,6 @@ comment
 //     }
 
 // }
-
-
 
 // #include<stdio.h>
 
@@ -1282,8 +1271,6 @@ comment
 //     }
 
 // }
-
-
 
 // #include<stdio.h>
 
@@ -1308,6 +1295,394 @@ comment
 
 // int/int = int
 
-// foat/int = float
+// float/int = float
 
-// foat/float = float
+// float/float = float
+
+// 2D Array :
+
+// #include<stdio.h>
+
+// int main(){
+
+//     // datatype array_name[row_Size][col_size];
+
+//     int arr[3][4];
+
+//     arr[0][0] = 10;
+//     arr[0][1] = 11;
+//     arr[0][2] = 12;
+//     arr[0][3] = 13;
+
+//     arr[1][0] = 14;
+//     arr[1][1] = 15;
+//     arr[1][2] = 16;
+//     arr[1][3] = 17;
+
+//     arr[2][0] = 18;
+//     arr[2][1] = 19;
+//     arr[2][2] = 12;
+//     arr[2][3] = 16;
+
+//     printf("%d",arr[1][2]);
+
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[3][4] = {
+//         {10,20,30,40},
+//         {11,22,33,44},
+//         {55,66,77,88}
+//     };
+
+//     printf("%d",arr[1][2]);
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[3][4] = {
+//         {10,20,30,40},
+//         {11,22,33,44},
+//         {55,66,77,88}
+//     };
+
+//     printf("%d",arr[1][2]);
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+
+//     int arr[3][4];
+
+//     printf("%d", sizeof(arr));
+
+//     // outer loop -> row
+
+//     for (int i = 0; i < 3; i++)
+//     {
+
+//         // Inner Loop -> col
+
+//         for (int j = 0; j < 4; j++)
+//         {
+
+//             printf("Enter element at %d row and %d col :", i, j);
+//             scanf("%d", &arr[i][j]);
+//         }
+//     }
+
+//     printf("Array : \n");
+
+//     for (int i = 0; i < 3; i++)
+//     {
+
+//         // Inner Loop -> col
+
+//         for (int j = 0; j < 4; j++)
+//         {
+
+//             printf("%d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+// int arr[10] = {10,23,45,67,89,12,34,21,66,76};
+
+// // arr[i] = arr[i+1];
+// int position = 3;
+// int arr[10] = {10,23,45,89,12,34,21,66,76};
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[10] = {10,23,45,67,89,12,34,21,66,76};
+//     int position = 3;
+//     printf("Original Array : ");
+
+//     for(int i = 0; i < 10; i++){
+//         printf("%d ",arr[i]);
+//     }
+
+//     for(int i = position; i < 10; i++){
+//        arr[i] = arr[i+1];
+//     }
+
+//     printf("\n After deleted element from array : ");
+
+//     for(int i = 0; i < 9; i++){
+//         printf("%d ",arr[i]);
+//     }
+// }
+
+// Insert element at specific position  (without deleting element present at that index)
+
+// int arr[11] = {10,23,45,67,89,12,34,21,66,76,[]};
+// int position = 3;
+// int insertedData = 100;
+// int arr[11] = {10,23,45,100,67,89,12,34,21,66,76};
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int arr[11] = {10,23,45,67,89,12,34,21,66,76};
+//     int position = 3;
+//     int insertedData = 100;
+//     printf("Original Array : ");
+
+//     for(int i = 0; i < 10; i++){
+//         printf("%d ",arr[i]);
+//     }
+
+//     for(int i = 10; i > position; i--){
+//        arr[i] = arr[i-1];
+//     }
+
+//     arr[position] = insertedData;
+//     printf("\n After deleted element from array : ");
+
+//     for(int i = 0; i < 11; i++){
+//         printf("%d ",arr[i]);
+//     }
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char name[6] = "Pawan";
+
+//     printf("%s",name);
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char name[13] = "Pawan\0Maurya";
+
+//     printf("%s",name);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char name[] = "Pawan Maurya fghtrf gfhtu56";
+
+//     int size = sizeof(name)/sizeof(name[0]);
+//    for(int i = 0; i<size; i++){
+//     printf("%c at index %d\n",name[i],i);
+//    }
+
+//    printf("\n%d",sizeof(name));
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char name[5] = {'P','a','w','a','n'};
+
+//    for(int i = 0; i<5; i++){
+//     printf("%c",name[i]);
+//    }
+
+//    printf("\n%d",sizeof(name));
+// }
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char *name = "Pawan Maurya";
+
+//     printf("%s",name);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char *name = "Pawan Maurya";
+
+//     printf("%s",name);
+
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char name[5] = {'P','a','w','a','n','\0'};
+
+//    for(int i = 0; i<5; i++){
+//     printf("%c",name[i]);
+//    }
+
+//    printf("\n%d",sizeof(name));
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//     char ch[] = "sds\0";
+//    printf("\n%d",sizeof(ch));
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char *name = "Pawan Maurya dfdgr tgre5y gfhtyu";
+
+//     for(int i = 0; name[i] != '\0'; i++){
+
+//         printf("%c",name[i]);
+//     }
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char *name = "Pawan Maurya dfdgr tgre5y gfhtyu";
+
+//    printf("%d",)
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char ch;
+
+//     printf("Enter character : ");
+//     ch = getchar(); // input character ->  getchar()
+
+//     printf("Your character : ");
+//     putchar(ch);  // output character -> putchar(ch)
+
+// }
+
+// string -> gets(), puts();
+
+// #include<stdio.h>
+
+// int main(){
+
+// char *username;
+
+// printf("Enter Username : ");
+// gets(username);  // string input -> gets()
+
+// printf("Your username : ");
+// puts(username); // string output -> puts()
+
+// }
+
+// //  Type 1 : Take nothing and return nothing
+
+// #include<stdio.h>
+
+// // definition of function 
+// void add(){ 
+//     int x = 10;
+//     int y = 20;
+
+//     int sum = x+y;
+//     printf("sum of %d and %d is : %d",x,y,sum);
+// }
+
+// int main(){
+
+//     add(); // function call or invoke
+
+// }
+
+
+// //  Type 2 : Take something and return nothing
+
+// #include<stdio.h>
+
+// // definition of function 
+// void add(int x, int y){ // x,y -> parameter
+//     printf("%d is value of x\n",x);
+//     printf("%d is value of y\n",y);
+//     int sum = x+y;
+//     printf("sum of %d and %d is : %d",x,y,sum);
+// }
+
+// int main(){
+
+//     // add(100,200); // function call or invoke
+//     add(500,2000); // function call or invoke -> 500,2000 -> argument
+
+// }
+
+
+
+// //  Type 3 : Take something and return something
+
+// #include<stdio.h>
+
+// // definition of function 
+// int add(int x, int y){ // x,y -> parameter
+//     printf("%d is value of x\n",x);
+//     printf("%d is value of y\n",y);
+//     int sum = x+y;
+//     return sum;
+// }
+
+// int main(){
+
+//     // int result = add(100,200);
+
+//     // printf("Result : %d",result);
+//     printf("Result : %d",add(100,200));
+
+// }
+
+//  Type 4 : Take nothing and return something
+
+#include<stdio.h>
+
+// definition of function 
+int add(){ // x,y -> parameter
+    int x = 10;
+    int y = 20;
+    int sum = x+y;
+    return sum;
+}
+
+int main(){
+
+    int sum = add();
+
+    printf("Sum : %d",sum);
+
+}
