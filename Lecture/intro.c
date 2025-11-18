@@ -1669,20 +1669,270 @@ comment
 
 //  Type 4 : Take nothing and return something
 
-#include<stdio.h>
+// #include<stdio.h>
 
-// definition of function 
-int add(){ // x,y -> parameter
-    int x = 10;
-    int y = 20;
-    int sum = x+y;
-    return sum;
-}
+// // definition of function 
+// int add(){ // x,y -> parameter
+//     int x = 10;
+//     int y = 20;
+//     int sum = x+y;
+//     return sum;
+// }
 
-int main(){
+// int main(){
 
-    int sum = add();
+//     int sum = add();
 
-    printf("Sum : %d",sum);
+//     printf("Sum : %d",sum);
 
-}
+// }
+
+
+// Nested function
+
+// #include<stdio.h>
+
+// int outer(){
+
+//     printf("Outer function called!\n");
+
+//     int inner(){
+//         printf("Inner function called\n");
+//     }
+
+//     inner();
+// }
+
+// int main(){
+
+//     outer();
+
+// }
+
+// #include<stdio.h>
+
+// int inner(){
+//         printf("Inner function called\n");
+//     }
+
+
+// int outer(){
+
+//     printf("Outer function called!\n");
+
+  
+//     inner();
+// }
+
+// int main(){
+
+//     outer();
+
+// }
+
+
+//Recursion function
+
+// Factorial : 
+// 5! => 5*4*3*2*1=> 120
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     int x= 10;
+
+//     int fact = 1;
+
+//     for(int i = x; i>=1; i--){
+//         // fact *=i;
+//         fact = fact *i;
+//     }
+
+//     printf("%d",fact);
+// }
+
+
+//Recursion function
+
+// 1. Base Condition
+// 2. nested function
+
+// Factorial : 
+// 5! => 5*4*3*2*1=> 120
+
+
+// 1
+//2*fact(2-1) => 2*1
+// 3*fact(3-1) => 3*2*1
+// 4*fact(4-1) => 4*3*2*1
+// 5*fact(5-1) => 5*4*3*2*1
+// 6* fact(6-1) => 6*5*4*3*2*1
+
+
+// #include<stdio.h>
+
+// int fact(int x){
+
+// // base condition
+
+//     if(x == 1){
+//         return 1;
+//     }
+
+//     return x * fact(x-1);
+// }
+
+// int main(){
+
+//     int num = 5;
+
+//   int result = fact(num);
+
+//   printf("Factorial of %d is : %d",num,result);
+
+// }
+
+
+
+// #include<stdio.h>
+
+// int add(int x, int y); // function declaration
+// int main(){
+
+//     printf("Result : %d",add(100,200)); // function invoke
+
+// }
+
+// int add(int x, int y){  // function definition
+//     printf("%d is value of x\n",x);
+//     printf("%d is value of y\n",y);
+//     int sum = x+y;
+//     return sum;
+// }
+
+
+
+// Pointer
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+
+//     int *ptr = &x;
+
+
+//     printf("The address of x : %p\n",&x);
+//     printf("The vale of ptr : %p\n",ptr);
+
+//     printf("The value of x : %d\n",x);
+//     printf("The value of *ptr : %d\n",*ptr);
+    
+// }
+
+
+// String Built-in method 
+
+
+// #include<stdio.h>
+
+// int main(){
+
+//     char *name = "Pawan Maurya";
+
+//     printf("length of %s is : %d",name,strlen(name));
+
+// }
+// {'a','b'}
+
+// #include<stdio.h>
+// // #include<string.h>
+
+// int main(){
+
+//     char name[13] = "Pawan Maurya";
+//     // char name[13] = {'P','a','w','a','n',' ','M','a','u','r','y','a'};
+
+//     printf("length of %s is : %d",name,strlen(name));
+
+//     // for(int i = 0; i<12; i++){
+//     //     printf("%c",name[i]);
+//     // }
+
+
+//     // int arr[5] = {12,34,56,67,57};
+
+//     // printf("%d",arr);
+
+// }
+
+
+
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+
+//     char name[25] = "Pawan Maurya";
+
+//     char ch[10] = "abc";
+
+//     printf("%s\n",strupr(name));
+//     printf("%s\n",strlwr(name));
+
+//     printf("%s\n",name);
+
+//     // name[25] = strcat(name,ch);
+
+//     printf("%s\n",strcat(name,ch));
+
+
+// }
+
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+
+//     char name[13] = "Pawan Maurya";
+
+//     // printf("%s",strrev(name));
+    
+//     char username[13];
+//     strcpy(username,name);
+//     printf("%s",username);
+
+//     printf("\n %d",strcmp(username,name));
+    
+//     char *ch = "pawan maurya";
+//     printf("\n %d",strcmp(username,ch));
+// }
+
+
+// Pointer -> 
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int x = 10;
+
+//     int *ptr = &x;
+
+
+//     printf("The address of x : %p\n",&x);
+//     printf("The vale of ptr : %p\n",ptr);
+
+//     printf("The value of x : %d\n",x);
+//     printf("The value of *ptr : %d\n",*ptr);
+    
+
+//     *ptr = 900;
+
+//     printf("The value of x : %d\n",x);
+//     printf("The value of *ptr : %d\n",*ptr);
+// }
+
+
